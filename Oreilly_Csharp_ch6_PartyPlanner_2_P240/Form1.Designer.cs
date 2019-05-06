@@ -33,13 +33,13 @@
             this.BirthdayPartyTab = new System.Windows.Forms.TabPage();
             this.DinnerCostLabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.HealthyCheak = new System.Windows.Forms.CheckBox();
-            this.FancyCheck = new System.Windows.Forms.CheckBox();
+            this.DinnerHealthyCheak = new System.Windows.Forms.CheckBox();
+            this.DinnerFancyCheck = new System.Windows.Forms.CheckBox();
             this.NumberDinnerChange = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.BirthdayCostLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.FancyDecorationsCheckBox = new System.Windows.Forms.CheckBox();
+            this.BirthdayFancyCheck = new System.Windows.Forms.CheckBox();
             this.NumberBirthdayChange = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.BirthdayTextBox = new System.Windows.Forms.TextBox();
@@ -70,8 +70,8 @@
             // 
             this.DinnerPartyTab.Controls.Add(this.DinnerCostLabel);
             this.DinnerPartyTab.Controls.Add(this.label4);
-            this.DinnerPartyTab.Controls.Add(this.HealthyCheak);
-            this.DinnerPartyTab.Controls.Add(this.FancyCheck);
+            this.DinnerPartyTab.Controls.Add(this.DinnerHealthyCheak);
+            this.DinnerPartyTab.Controls.Add(this.DinnerFancyCheck);
             this.DinnerPartyTab.Controls.Add(this.NumberDinnerChange);
             this.DinnerPartyTab.Controls.Add(this.label5);
             this.DinnerPartyTab.Font = new System.Drawing.Font("新細明體", 12F);
@@ -90,7 +90,7 @@
             this.BirthdayPartyTab.Controls.Add(this.BirthdayTextBox);
             this.BirthdayPartyTab.Controls.Add(this.BirthdayCostLabel);
             this.BirthdayPartyTab.Controls.Add(this.label2);
-            this.BirthdayPartyTab.Controls.Add(this.FancyDecorationsCheckBox);
+            this.BirthdayPartyTab.Controls.Add(this.BirthdayFancyCheck);
             this.BirthdayPartyTab.Controls.Add(this.NumberBirthdayChange);
             this.BirthdayPartyTab.Controls.Add(this.label1);
             this.BirthdayPartyTab.Font = new System.Drawing.Font("新細明體", 12F);
@@ -121,27 +121,27 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Cost";
             // 
-            // HealthyCheak
+            // DinnerHealthyCheak
             // 
-            this.HealthyCheak.AutoSize = true;
-            this.HealthyCheak.Font = new System.Drawing.Font("新細明體", 12F);
-            this.HealthyCheak.Location = new System.Drawing.Point(9, 100);
-            this.HealthyCheak.Name = "HealthyCheak";
-            this.HealthyCheak.Size = new System.Drawing.Size(159, 20);
-            this.HealthyCheak.TabIndex = 9;
-            this.HealthyCheak.Text = "Healthy Decorations ";
-            this.HealthyCheak.UseVisualStyleBackColor = true;
+            this.DinnerHealthyCheak.AutoSize = true;
+            this.DinnerHealthyCheak.Font = new System.Drawing.Font("新細明體", 12F);
+            this.DinnerHealthyCheak.Location = new System.Drawing.Point(9, 100);
+            this.DinnerHealthyCheak.Name = "DinnerHealthyCheak";
+            this.DinnerHealthyCheak.Size = new System.Drawing.Size(159, 20);
+            this.DinnerHealthyCheak.TabIndex = 9;
+            this.DinnerHealthyCheak.Text = "Healthy Decorations ";
+            this.DinnerHealthyCheak.UseVisualStyleBackColor = true;
             // 
-            // FancyCheck
+            // DinnerFancyCheck
             // 
-            this.FancyCheck.AutoSize = true;
-            this.FancyCheck.Font = new System.Drawing.Font("新細明體", 12F);
-            this.FancyCheck.Location = new System.Drawing.Point(9, 74);
-            this.FancyCheck.Name = "FancyCheck";
-            this.FancyCheck.Size = new System.Drawing.Size(144, 20);
-            this.FancyCheck.TabIndex = 8;
-            this.FancyCheck.Text = "Fancy Decorations";
-            this.FancyCheck.UseVisualStyleBackColor = true;
+            this.DinnerFancyCheck.AutoSize = true;
+            this.DinnerFancyCheck.Font = new System.Drawing.Font("新細明體", 12F);
+            this.DinnerFancyCheck.Location = new System.Drawing.Point(9, 74);
+            this.DinnerFancyCheck.Name = "DinnerFancyCheck";
+            this.DinnerFancyCheck.Size = new System.Drawing.Size(144, 20);
+            this.DinnerFancyCheck.TabIndex = 8;
+            this.DinnerFancyCheck.Text = "Fancy Decorations";
+            this.DinnerFancyCheck.UseVisualStyleBackColor = true;
             // 
             // NumberDinnerChange
             // 
@@ -195,16 +195,16 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Cost";
             // 
-            // FancyDecorationsCheckBox
+            // BirthdayFancyCheck
             // 
-            this.FancyDecorationsCheckBox.AutoSize = true;
-            this.FancyDecorationsCheckBox.Font = new System.Drawing.Font("新細明體", 12F);
-            this.FancyDecorationsCheckBox.Location = new System.Drawing.Point(9, 74);
-            this.FancyDecorationsCheckBox.Name = "FancyDecorationsCheckBox";
-            this.FancyDecorationsCheckBox.Size = new System.Drawing.Size(144, 20);
-            this.FancyDecorationsCheckBox.TabIndex = 8;
-            this.FancyDecorationsCheckBox.Text = "Fancy Decorations";
-            this.FancyDecorationsCheckBox.UseVisualStyleBackColor = true;
+            this.BirthdayFancyCheck.AutoSize = true;
+            this.BirthdayFancyCheck.Font = new System.Drawing.Font("新細明體", 12F);
+            this.BirthdayFancyCheck.Location = new System.Drawing.Point(9, 74);
+            this.BirthdayFancyCheck.Name = "BirthdayFancyCheck";
+            this.BirthdayFancyCheck.Size = new System.Drawing.Size(144, 20);
+            this.BirthdayFancyCheck.TabIndex = 8;
+            this.BirthdayFancyCheck.Text = "Fancy Decorations";
+            this.BirthdayFancyCheck.UseVisualStyleBackColor = true;
             // 
             // NumberBirthdayChange
             // 
@@ -294,8 +294,8 @@
         private System.Windows.Forms.TabPage DinnerPartyTab;
         private System.Windows.Forms.Label DinnerCostLabel;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox HealthyCheak;
-        private System.Windows.Forms.CheckBox FancyCheck;
+        private System.Windows.Forms.CheckBox DinnerHealthyCheak;
+        private System.Windows.Forms.CheckBox DinnerFancyCheck;
         private System.Windows.Forms.NumericUpDown NumberDinnerChange;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TabPage BirthdayPartyTab;
@@ -304,7 +304,7 @@
         private System.Windows.Forms.TextBox BirthdayTextBox;
         private System.Windows.Forms.Label BirthdayCostLabel;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox FancyDecorationsCheckBox;
+        private System.Windows.Forms.CheckBox BirthdayFancyCheck;
         private System.Windows.Forms.NumericUpDown NumberBirthdayChange;
         private System.Windows.Forms.Label label1;
     }
