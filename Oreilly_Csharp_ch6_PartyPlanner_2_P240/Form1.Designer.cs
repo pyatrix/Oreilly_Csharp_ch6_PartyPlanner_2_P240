@@ -30,25 +30,25 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.DinnerPartyTab = new System.Windows.Forms.TabPage();
-            this.BirthdayPartyTab = new System.Windows.Forms.TabPage();
             this.DinnerCostLabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.DinnerHealthyCheak = new System.Windows.Forms.CheckBox();
             this.DinnerFancyCheck = new System.Windows.Forms.CheckBox();
             this.NumberDinnerChange = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
+            this.BirthdayPartyTab = new System.Windows.Forms.TabPage();
+            this.TooLongLabel = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.BirthdayTextBox = new System.Windows.Forms.TextBox();
             this.BirthdayCostLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.BirthdayFancyCheck = new System.Windows.Forms.CheckBox();
             this.NumberBirthdayChange = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
-            this.BirthdayTextBox = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.TooLongLabel = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.DinnerPartyTab.SuspendLayout();
-            this.BirthdayPartyTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumberDinnerChange)).BeginInit();
+            this.BirthdayPartyTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumberBirthdayChange)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,25 +83,6 @@
             this.DinnerPartyTab.Text = "Dinner Party";
             this.DinnerPartyTab.UseVisualStyleBackColor = true;
             // 
-            // BirthdayPartyTab
-            // 
-            this.BirthdayPartyTab.Controls.Add(this.TooLongLabel);
-            this.BirthdayPartyTab.Controls.Add(this.label6);
-            this.BirthdayPartyTab.Controls.Add(this.BirthdayTextBox);
-            this.BirthdayPartyTab.Controls.Add(this.BirthdayCostLabel);
-            this.BirthdayPartyTab.Controls.Add(this.label2);
-            this.BirthdayPartyTab.Controls.Add(this.BirthdayFancyCheck);
-            this.BirthdayPartyTab.Controls.Add(this.NumberBirthdayChange);
-            this.BirthdayPartyTab.Controls.Add(this.label1);
-            this.BirthdayPartyTab.Font = new System.Drawing.Font("新細明體", 12F);
-            this.BirthdayPartyTab.Location = new System.Drawing.Point(4, 26);
-            this.BirthdayPartyTab.Name = "BirthdayPartyTab";
-            this.BirthdayPartyTab.Padding = new System.Windows.Forms.Padding(3);
-            this.BirthdayPartyTab.Size = new System.Drawing.Size(209, 230);
-            this.BirthdayPartyTab.TabIndex = 1;
-            this.BirthdayPartyTab.Text = "Birthday Party";
-            this.BirthdayPartyTab.UseVisualStyleBackColor = true;
-            // 
             // DinnerCostLabel
             // 
             this.DinnerCostLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -131,6 +112,7 @@
             this.DinnerHealthyCheak.TabIndex = 9;
             this.DinnerHealthyCheak.Text = "Healthy Decorations ";
             this.DinnerHealthyCheak.UseVisualStyleBackColor = true;
+            this.DinnerHealthyCheak.CheckedChanged += new System.EventHandler(this.DinnerHealthyCheak_CheckedChanged);
             // 
             // DinnerFancyCheck
             // 
@@ -142,6 +124,7 @@
             this.DinnerFancyCheck.TabIndex = 8;
             this.DinnerFancyCheck.Text = "Fancy Decorations";
             this.DinnerFancyCheck.UseVisualStyleBackColor = true;
+            this.DinnerFancyCheck.CheckedChanged += new System.EventHandler(this.DinnerFancyCheck_CheckedChanged);
             // 
             // NumberDinnerChange
             // 
@@ -165,6 +148,7 @@
             0,
             0,
             0});
+            this.NumberDinnerChange.ValueChanged += new System.EventHandler(this.NumberDinnerChange_ValueChanged);
             // 
             // label5
             // 
@@ -175,6 +159,55 @@
             this.label5.Size = new System.Drawing.Size(122, 16);
             this.label5.TabIndex = 6;
             this.label5.Text = "Number of People";
+            // 
+            // BirthdayPartyTab
+            // 
+            this.BirthdayPartyTab.Controls.Add(this.TooLongLabel);
+            this.BirthdayPartyTab.Controls.Add(this.label6);
+            this.BirthdayPartyTab.Controls.Add(this.BirthdayTextBox);
+            this.BirthdayPartyTab.Controls.Add(this.BirthdayCostLabel);
+            this.BirthdayPartyTab.Controls.Add(this.label2);
+            this.BirthdayPartyTab.Controls.Add(this.BirthdayFancyCheck);
+            this.BirthdayPartyTab.Controls.Add(this.NumberBirthdayChange);
+            this.BirthdayPartyTab.Controls.Add(this.label1);
+            this.BirthdayPartyTab.Font = new System.Drawing.Font("新細明體", 12F);
+            this.BirthdayPartyTab.Location = new System.Drawing.Point(4, 26);
+            this.BirthdayPartyTab.Name = "BirthdayPartyTab";
+            this.BirthdayPartyTab.Padding = new System.Windows.Forms.Padding(3);
+            this.BirthdayPartyTab.Size = new System.Drawing.Size(209, 230);
+            this.BirthdayPartyTab.TabIndex = 1;
+            this.BirthdayPartyTab.Text = "Birthday Party";
+            this.BirthdayPartyTab.UseVisualStyleBackColor = true;
+            // 
+            // TooLongLabel
+            // 
+            this.TooLongLabel.AutoSize = true;
+            this.TooLongLabel.BackColor = System.Drawing.Color.Red;
+            this.TooLongLabel.Font = new System.Drawing.Font("新細明體", 12F);
+            this.TooLongLabel.Location = new System.Drawing.Point(103, 102);
+            this.TooLongLabel.Name = "TooLongLabel";
+            this.TooLongLabel.Size = new System.Drawing.Size(85, 16);
+            this.TooLongLabel.TabIndex = 14;
+            this.TooLongLabel.Text = "TOO LONG";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("新細明體", 12F);
+            this.label6.Location = new System.Drawing.Point(6, 102);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(91, 16);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Cake Writing";
+            // 
+            // BirthdayTextBox
+            // 
+            this.BirthdayTextBox.Location = new System.Drawing.Point(9, 121);
+            this.BirthdayTextBox.Name = "BirthdayTextBox";
+            this.BirthdayTextBox.Size = new System.Drawing.Size(179, 27);
+            this.BirthdayTextBox.TabIndex = 12;
+            this.BirthdayTextBox.Text = "Happy Birthday";
+            this.BirthdayTextBox.TextChanged += new System.EventHandler(this.CakeWriting_TextChanged);
             // 
             // BirthdayCostLabel
             // 
@@ -205,6 +238,7 @@
             this.BirthdayFancyCheck.TabIndex = 8;
             this.BirthdayFancyCheck.Text = "Fancy Decorations";
             this.BirthdayFancyCheck.UseVisualStyleBackColor = true;
+            this.BirthdayFancyCheck.CheckedChanged += new System.EventHandler(this.BirthdayFancyCheck_CheckedChanged);
             // 
             // NumberBirthdayChange
             // 
@@ -228,6 +262,7 @@
             0,
             0,
             0});
+            this.NumberBirthdayChange.ValueChanged += new System.EventHandler(this.NumberBirthdayChange_ValueChanged);
             // 
             // label1
             // 
@@ -238,35 +273,6 @@
             this.label1.Size = new System.Drawing.Size(122, 16);
             this.label1.TabIndex = 6;
             this.label1.Text = "Number of People";
-            // 
-            // BirthdayTextBox
-            // 
-            this.BirthdayTextBox.Location = new System.Drawing.Point(9, 121);
-            this.BirthdayTextBox.Name = "BirthdayTextBox";
-            this.BirthdayTextBox.Size = new System.Drawing.Size(179, 27);
-            this.BirthdayTextBox.TabIndex = 12;
-            this.BirthdayTextBox.Text = "Happy Birthday";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("新細明體", 12F);
-            this.label6.Location = new System.Drawing.Point(6, 102);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 16);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Cake Writing";
-            // 
-            // TooLongLabel
-            // 
-            this.TooLongLabel.AutoSize = true;
-            this.TooLongLabel.BackColor = System.Drawing.Color.Red;
-            this.TooLongLabel.Font = new System.Drawing.Font("新細明體", 12F);
-            this.TooLongLabel.Location = new System.Drawing.Point(103, 102);
-            this.TooLongLabel.Name = "TooLongLabel";
-            this.TooLongLabel.Size = new System.Drawing.Size(85, 16);
-            this.TooLongLabel.TabIndex = 14;
-            this.TooLongLabel.Text = "TOO LONG";
             // 
             // Form1
             // 
@@ -281,9 +287,9 @@
             this.tabControl1.ResumeLayout(false);
             this.DinnerPartyTab.ResumeLayout(false);
             this.DinnerPartyTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NumberDinnerChange)).EndInit();
             this.BirthdayPartyTab.ResumeLayout(false);
             this.BirthdayPartyTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NumberDinnerChange)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumberBirthdayChange)).EndInit();
             this.ResumeLayout(false);
 
